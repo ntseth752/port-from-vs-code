@@ -14,7 +14,7 @@ const About: React.FC = () => {
                     <a href="#contact" className="about-btn">Contact us</a>
                 </div>
                 <div className="about-image-wrapper">
-                    <img src="/profile.jpg" alt="Anderson Coper" className="about-image" />
+                    <img src="/images/download.jpg" alt="NT Seth" className="about-image" />
                 </div>
             </div>
         </section>

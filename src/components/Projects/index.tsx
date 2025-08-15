@@ -3,22 +3,22 @@ import './Projects.css';
 
 const projects = [
     {
-        title: 'Project One',
-        description: 'Description of project one.',
-        image: 'https://via.placeholder.com/350x250',
-        link: 'https://link-to-project-one.com'
+        title: 'Portfolio Website',
+        description: 'A modern portfolio website built with React and TypeScript, featuring smooth animations and responsive design.',
+        image: '/images/bg.jpg',
+        link: '#'
     },
     {
-        title: 'Project Two',
-        description: 'Description of project two.',
-        image: 'https://via.placeholder.com/350x250',
-        link: 'https://link-to-project-two.com'
+        title: 'E-commerce Platform',
+        description: 'Full-stack e-commerce solution with user authentication, product management, and payment integration.',
+        image: '/images/bg.jpg',
+        link: '#'
     },
     {
-        title: 'Project Three',
-        description: 'Description of project three.',
-        image: 'https://via.placeholder.com/350x250',
-        link: 'https://link-to-project-three.com'
+        title: 'Mobile App UI',
+        description: 'Clean and intuitive mobile app interface design for a fitness tracking application.',
+        image: '/images/bg.jpg',
+        link: '#'
     }
 ];
 
@@ -33,11 +33,24 @@ const Projects: React.FC = () => {
                 <div className="projects-grid">
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
-                            <img src={project.image} alt={project.title} />
-                            <div className="project-info">
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                            <div
+                                className="project-media"
+                                style={{ backgroundImage: `url(${project.image})` }}
+                                role="img"
+                                aria-label={project.title}
+                            >
+                                <div className="project-overlay">
+                                    <h3>{project.title}</h3>
+                                    <p>{project.description}</p>
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-link"
+                                    >
+                                        View Project
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}

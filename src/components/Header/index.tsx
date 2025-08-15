@@ -46,6 +46,7 @@ const Header: React.FC = () => {
                             </ul>
                         </li>
                         <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+                        <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
                         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
                         <li><a href="#location" onClick={() => setMenuOpen(false)}>Location</a></li>
                     </ul>
@@ -77,7 +78,7 @@ const Header: React.FC = () => {
                         </div>
                     </div>
                     <div className="header-image-wrapper">
-                        <img src="/profile.jpg" alt="Profile" className="header-image" />
+                        <img src="/PF.webp" alt="NT Seth" className="header-image" />
                     </div>
                 </div>
             </div>

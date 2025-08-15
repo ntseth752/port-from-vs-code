@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
+import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -34,6 +35,9 @@ const MainContent = () => (
                     <h2>Motion Graphics</h2>
                     <p>Animated graphics and video content for digital products.</p>
                 </div>
+            </section>
+            <section id="pricing">
+                <Pricing />
             </section>
             <section id="contact">
                 <Contact />
